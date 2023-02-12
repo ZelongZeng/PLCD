@@ -88,7 +88,7 @@ python test_D2S.py --batchsize 8 --test_dir $Your_Data_Root$ --name $Name_of_D2S
 python evaluate_h5.py --name $Name_of_D2S$
 ```
 
-**Evaluation for ground-to-satellite retrieval by using cross-diffusion:**
+### Evaluation for ground-to-satellite retrieval by using cross-diffusion:
 ```
 cd diffusion
 python evaluate_dfs.py --name_g2d $Name_of_Step-3$ --name_d2s $Name_of_D2S$ --kq 20 --kd 70 --n_trunc 500 --hiera 0
