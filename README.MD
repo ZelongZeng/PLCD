@@ -104,7 +104,6 @@ python evaluate_dfs.py --name_g2d $Name_of_Step-3$ --name_d2s $Name_of_D2S$ --kq
 
 
 ## Citation
-The following paper uses and reports the result of the baseline model. You may cite it in your paper.
 ```bibtex
 @article{zeng2022geo,
   title={Geo-localization via ground-to-satellite cross-view image retrieval},
