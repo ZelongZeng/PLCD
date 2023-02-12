@@ -52,7 +52,7 @@ More detailed file structure:
 
 ## Train & Evaluation 
 ### Train & Evaluation for the Ground-Drone representation
-** Different from our original paper, in this updated structure, we only use the global feature for knowledge distillation in the Step 2, and use the local feature in the Step 3. **
+**Different from our original paper, in this updated structure, we only use the global feature for knowledge distillation in the Step 2, and use the local feature in the Step 3.**
 
 **Train Step 1:**
 ```
