@@ -7,7 +7,7 @@ The official code of IEEE Transactions on Multimedia paper "Geo-localization via
 - We re-adjusted the values of the hyper-parameters to achieve better performance.
 - We removed the detection part for higher training efficiency.
 - We only used global features during test for higher retrieval efficiency.
-- We have fixed a big error in evaluate_dfs.py, which causes the performance (ground-to-satellite retrieval) in our paper to be too high.
+- We have fixed a big error in evaluate_dfs.py, which causes the performance (ground-to-satellite retrieval) in our paper are incorrect.
 
 ## Preparation
 
