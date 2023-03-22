@@ -124,8 +124,26 @@ python evaluate_dfs.py --name_g2d $Name_of_Step-3$ --name_d2s $Name_of_D2S$ --kq
   
 ## Pretrained models
 We also provide the pretrained models at [Google Driver](https://drive.google.com/drive/folders/19mH_zk7fs_x6aljuyfQEGq4Cl-kRVoEJ?usp=sharing). 
+If you want to use them, please download and put them into the 'PLCD/model/', then run the following commands: 
 
-If you want to use them, please download and put them into the 'PLCD/model/', then run the related [test codes](#train--evaluation) to get the results.  
+- Ground-to-Drone Retrieval:
+```
+python test_PL_G2D.py --batchsize 8 --test_dir $Your_Data_Root$ --name G2D --gpu_ids 0 --low_altitude 
+python evaluate_h5.py --name G2D 
+```
+- Drone-to-Satellite Retrieval:
+```
+python test_D2S.py --batchsize 8 --test_dir $Your_Data_Root$ --name D2S --gpu_ids 0  
+python evaluate_h5.py --name D2S  
+```
+
+- Ground-to-Satellite Retrieval:
+```
+python test_PL_G2D.py --batchsize 8 --test_dir $Your_Data_Root$ --name G2D --gpu_ids 0 --low_altitude 
+python test_D2S_for_diffusion.py --batchsize 8 --test_dir $Your_Data_Root$ --name D2S --gpu_ids 0 --low_altitude
+cd diffusion  
+python evaluate_dfs.py --name_g2d G2D --name_d2s D2S --kq 20 --kd 70 --n_trunc 500 --hiera 0 
+```
   
 ## Citation  
 ```bibtex  
