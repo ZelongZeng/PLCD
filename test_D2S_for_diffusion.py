@@ -122,7 +122,7 @@ if opt.multi:
 else:
     image_datasets = {x: datasets.ImageFolder( os.path.join(data_dir,x) ,data_transforms) for x in ['gallery_satellite','gallery_drone', 'gallery_drone_low', 'gallery_street', 'query_satellite', 'query_drone', 'query_street']}
     dataloaders = {x: torch.utils.data.DataLoader(image_datasets[x], batch_size=opt.batchsize,
-                                             shuffle=False, num_workers=16) for x in ['gallery_satellite', 'gallery_drone','gallery_street', 'query_satellite', 'query_drone', 'query_street']}
+                                             shuffle=False, num_workers=16) for x in ['gallery_satellite', 'gallery_drone', 'gallery_drone_low', 'gallery_street', 'query_satellite', 'query_drone', 'query_street']}
 use_gpu = torch.cuda.is_available()
 
 length1 = len(image_datasets['gallery_satellite'])
