@@ -77,7 +77,7 @@ parser.add_argument('--tau', default=0.1, type=float, help='tau')
 parser.add_argument('--hiera', default=0, type=int, help='the hierarchy')
 
 
-parser.add_argument('--easy_pos', action='store_true', help='hard_negative')
+parser.add_argument('--easy_pos', action='store_true', help='use easy positive')
 parser.add_argument('--use_detection', action='store_true', help='use detection')
 
 parser.add_argument('--lambda1', default=1., type=float, help='lambda1')

@@ -79,7 +79,7 @@ parser.add_argument('--seed', default=0, type=int, help='the seed')
 
 parser.add_argument('--use_detection', action='store_true', help='use detection')
 
-parser.add_argument('--easy_pos', action='store_true', help='hard_negative')
+parser.add_argument('--easy_pos', action='store_true', help='easy positive')
 
 parser.add_argument('--lambda1', default=1., type=float, help='lambda1')
 parser.add_argument('--lambda2', default=1., type=float, help='lambda2')
