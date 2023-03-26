@@ -123,7 +123,7 @@ python evaluate_dfs.py --name_g2d $Name_of_Step-3$ --name_d2s $Name_of_D2S$ --kq
 **Ground-to-Satellite Retrieval:** R@1: 6.63 R@5: 14.73 R@10: 18.53 R@1%: 19.31 mAP: 8.80  
   
 ## Pretrained models
-We also provide the pretrained models at [Google Driver](https://drive.google.com/drive/folders/19mH_zk7fs_x6aljuyfQEGq4Cl-kRVoEJ?usp=sharing). 
+We also provide the pretrained models at [Dropbox](https://www.dropbox.com/sh/qtuecfcehkxaugq/AADgFFLfWikXhouFbvRxDCpfa?dl=0). 
 If you want to use them, please download and put them into the 'PLCD/model/', then run the following commands: 
 
 - Ground-to-Drone Retrieval:
