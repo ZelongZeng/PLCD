@@ -306,6 +306,9 @@ since = time.time()
 gallery_name = 'gallery_drone'
 query_name = 'query_street'
 
+if opt.low_altitude:
+    gallery_name = 'gallery_drone_low'
+
 #gallery_name = 'gallery_street'
 #query_name = 'query_drone'
 #gallery_name = 'gallery_drone'
