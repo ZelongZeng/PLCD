@@ -3,7 +3,7 @@ The official code of IEEE Transactions on Multimedia paper "Geo-localization via
   
 ## What's New?  
 **24 Jun 2024**  
--Fix a bug in ```test_PL_G2D.py``` for ```--low_altitude```. 
+- Fix a bug in ```test_PL_G2D.py``` for ```--low_altitude```. 
 
 **22 Mar 2023**  
 - We shared the pre-trained models.   Please check [here](#pretrained-models). 
